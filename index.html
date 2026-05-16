@@ -1,1 +1,271 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>SignDepot · 文档扫描与签名</title> <meta name="description" content="SignDepot · Scan, organize & sign PDFs and photos. 扫描归档，一键签署 PDF/图片。"> <link rel="icon" href="favicon.ico"> <style> :root{ --bg:#16171E; --surface:#1E1F27; --text:#E8EAF4; --text2:#B4B8C9; --blue:#7DA6FF; --joy:#FFD54F; --calm:#4DA8FF; --anx:#FF7043; --sad:#7E57C2; --ener:#2ECC71; } *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, Noto Sans, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;} a{color:var(--blue);text-decoration:none} .container{max-width:1100px;margin:0 auto;padding:40px 24px} nav{display:flex;justify-content:space-between;align-items:center;gap:16px} .brand{display:flex;align-items:center;gap:12px;font-weight:700} .brand img.icon{width:40px;height:40px;border-radius:12px} .lang-switch{display:flex;gap:8px;background:var(--surface);border-radius:12px;padding:6px} .lang-switch button{all:unset;cursor:pointer;padding:6px 14px;border-radius:10px;color:var(--text2);font-weight:600} .lang-switch button.active{background:var(--blue);color:#0B1220} .hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:36px;align-items:center;margin-top:40px} .hero h1{font-size:40px;line-height:1.1;margin:0 0 16px} .hero p.lead{color:var(--text2);font-size:18px;margin:0 0 24px} .cta{display:flex;gap:12px;flex-wrap:wrap} .button{display:inline-flex;align-items:center;gap:10px;background:var(--blue);color:#0B1220;font-weight:700; padding:14px 22px;border-radius:14px;box-shadow:0 10px 30px rgba(125,166,255,.25);} .button.ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.15)} .card{background:var(--surface);border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.25);} .section{margin-top:80px} .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px} .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px} .tag{display:inline-block;padding:6px 10px;border-radius:8px;font-size:13px} .sample{width:100%;border-radius:18px;box-shadow:0 12px 40px rgba(0,0,0,.35);background:#0f1118;aspect-ratio:9/19.5;object-fit:cover} .footer{margin-top:80px;color:var(--text2);font-size:14px;border-top:1px solid rgba(255,255,255,.08);padding:32px 0} .colorbar{height:10px;border-radius:999px;background:linear-gradient(90deg,var(--calm),var(--ener),var(--joy),var(--anx),var(--sad));} .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px} .gallery img{width:100%;border-radius:18px;box-shadow:0 12px 40px rgba(0,0,0,.35);background:#0f1118;aspect-ratio:9/19.5;object-fit:cover} @media (max-width:960px){ .hero{grid-template-columns:1fr} } .nav-links{display:flex;gap:18px;align-items:center} .nav-links a{color:var(--text2);font-weight:600} .nav-links a:hover{color:var(--text)} .small{color:var(--text2);font-size:14px;line-height:1.7} ul.bullets{margin:12px 0 0 18px; color: var(--text2); line-height:1.7} </style> </head> <body> <div class="container"> <nav> <div class="brand"> <img class="icon" src="app_icon.png" alt="SignDepot icon"> <span data-en="SignDepot" data-zh="SignDepot · 文档扫描与签名"></span> </div> <div class="nav-links"> <a href="#features" data-en="Features" data-zh="功能"></a> <a href="#privacy" data-en="Privacy" data-zh="隐私"></a> <a href="#support" data-en="Support" data-zh="支持"></a> </div> <div class="lang-switch"> <button id="btn-en" class="active">English</button> <button id="btn-zh">中文</button> </div> </nav> <section class="hero"> <div> <h1 data-en="Scan, organize & sign PDFs and photos" data-zh="扫描归档，一键签署 PDF/图片"></h1> <p class="lead" data-en="Turn paper into clean PDFs, import from Files/iCloud, manage everything in folders, and place a reusable signature anywhere in seconds." data-zh="把纸质文件快速扫描成清晰 PDF，从文件/iCloud 导入 PDF 与图片，文件夹分类管理，并在任意位置拖放缩放可复用签名。"></p> <div class="cta"> <!-- TODO: Replace with your App Store / landing page URL --> <a href="https://example.com" class="button" target="_blank" rel="noopener" data-en="Launch" data-zh="打开应用/商店"></a> <a href="#features" class="button ghost" data-en="Learn more" data-zh="了解功能"></a> </div> <div style="margin-top:24px;color:var(--text2)"> <span>• </span><span data-en="No account required" data-zh="无需注册账号"></span><br> <span>• </span><span data-en="Signatures are reusable" data-zh="签名一次创建，反复使用"></span><br> <span>• </span><span data-en="Scan → organize → sign → export" data-zh="扫描 → 归档 → 签署 → 导出"></span> </div> <div style="margin-top:16px" class="colorbar" aria-hidden="true"></div> </div> <!-- Optional: you can place a hero screenshot here --> <div> <img class="sample" src="hero_en.png" data-en-src="hero_en.png" data-zh-src="hero_zh.png" alt="SignDepot hero screenshot"> <div class="small" style="margin-top:10px" data-en="Replace hero_en.png / hero_zh.png with your real screenshot." data-zh="将 hero_en.png / hero_zh.png 替换为真实截图。"></div> </div> </section> <section id="features" class="section"> <h2 data-en="Core features" data-zh="核心功能"></h2> <div class="grid-3" style="margin-top:24px"> <div class="card"> <div class="tag" style="background:rgba(77,168,255,.18);color:var(--calm)" data-en="Scanning" data-zh="文档扫描"></div> <h3 style="margin:12px 0" data-en="Built-in camera scanner" data-zh="内置相机扫描仪"></h3> <p class="small" data-en="Scan paper documents into high-quality digital files with a clean, readable result." data-zh="通过内置扫描仪把纸质文件转换为清晰可读的高质量数字文档。"></p> </div> <div class="card"> <div class="tag" style="background:rgba(46,204,113,.18);color:var(--ener)" data-en="Import" data-zh="导入"></div> <h3 style="margin:12px 0" data-en="Import PDFs & images from iCloud" data-zh="从 iCloud 导入 PDF/图片"></h3> <p class="small" data-en="Bring in existing PDFs and photos from Files/iCloud, then sign or organize them anytime." data-zh="支持从“文件/iCloud”导入现有 PDF 与图片，随时整理并完成签署。"></p> </div> <div class="card"> <div class="tag" style="background:rgba(255,213,79,.18);color:var(--joy)" data-en="Manage" data-zh="管理"></div> <h3 style="margin:12px 0" data-en="Folders + recent + search" data-zh="文件夹 + 最近 + 搜索"></h3> <p class="small" data-en="See recent documents, search by file name, and organize everything into folders. Rename, preview, delete with ease." data-zh="首页最近文档 + 按文件名全局搜索；支持文件夹分类、移动归类，以及重命名/预览/删除等操作。"></p> </div> <div class="card"> <div class="tag" style="background:rgba(126,87,194,.18);color:var(--sad)" data-en="eSignature" data-zh="电子签名"></div> <h3 style="margin:12px 0" data-en="Create once, reuse forever" data-zh="签名创建与复用"></h3> <p class="small" data-en="Create a handwritten signature and save it to your signature library for reuse." data-zh="创建手写签名并保存到签名库，一次创建，多次复用。"></p> </div> <div class="card"> <div class="tag" style="background:rgba(255,112,67,.18);color:var(--anx)" data-en="Sign" data-zh="签署"></div> <h3 style="margin:12px 0" data-en="Place & resize anywhere" data-zh="任意位置拖放缩放"></h3> <p class="small" data-en="Add signatures to any position on PDFs or photos, move and resize freely, then export a final signed copy." data-zh="在 PDF/图片任意位置添加签名，支持拖动与缩放，导出最终签署副本。"></p> </div> <div class="card"> <div class="tag" style="background:rgba(125,166,255,.18);color:var(--blue)" data-en="Languages" data-zh="多语言"></div> <h3 style="margin:12px 0" data-en="Built-in localization" data-zh="内置本地化"></h3> <p class="small" data-en="English, Simplified Chinese, German, French, and Spanish supported." data-zh="支持英语、简体中文、德语、法语、西班牙语。"></p> </div> </div> </section> <section class="section"> <h2 data-en="Screenshots" data-zh="界面预览"></h2> <p class="lead" data-en="Replace the images below with your actual screenshots (English/Chinese)." data-zh="将下方占位图替换为你的真实截图（中英各一套）。"></p> <div class="gallery" style="margin-top:16px"> <img src="en_1.png" data-en-src="en_1.png" data-zh-src="zh_1.png" alt="screenshot 1"> <img src="en_2.png" data-en-src="en_2.png" data-zh-src="zh_2.png" alt="screenshot 2"> <img src="en_3.png" data-en-src="en_3.png" data-zh-src="zh_3.png" alt="screenshot 3"> <img src="en_4.png" data-en-src="en_4.png" data-zh-src="zh_4.png" alt="screenshot 4"> </div> <div class="small" style="margin-top:18px"> <div data-en="Suggested screenshot captions:" data-zh="建议截图文案："></div> <ul class="bullets"> <li data-en="Scan paper to PDF" data-zh="拍照扫描成 PDF"></li> <li data-en="Import from iCloud Files" data-zh="从 iCloud 导入文件"></li> <li data-en="Folders keep it tidy" data-zh="文件夹分类归档"></li> <li data-en="Search by file name" data-zh="按文件名快速搜索"></li> <li data-en="Create a reusable signature" data-zh="创建可复用签名"></li> <li data-en="Place & resize anywhere" data-zh="任意位置拖放缩放"></li> <li data-en="Export a signed copy" data-zh="导出签署最终副本"></li> <li data-en="5 languages supported" data-zh="支持 5 种语言"></li> </ul> </div> </section> <section class="section"> <div class="grid-2"> <div class="card"> <h2 id="privacy" data-en="Privacy" data-zh="隐私"></h2> <p class="small" data-en="No account required. Documents and signatures are processed on device by default." data-zh="无需注册账号。文档与签名默认在设备端处理。"></p> <ul class="bullets"> <li data-en="We do not sell your data." data-zh="我们不出售用户数据。"></li> <li data-en="You stay in control of what you import and export." data-zh="你可以完全掌控导入与导出内容。"></li> </ul> <p class="small" style="margin-top:12px" data-en="Note: Update this section to match your actual App Privacy details in App Store Connect." data-zh="提示：请按实际情况与 App Store Connect 的隐私问卷保持一致。"></p> </div> <div class="card"> <h2 id="support" data-en="Support" data-zh="支持"></h2> <p class="small" data-en="Questions or feedback? Email us or open an issue on GitHub." data-zh="有问题或建议？欢迎发送邮件，或在 GitHub 提交 Issue。"></p> <!-- TODO: Replace with your support email --> <p><a href="mailto:freesysck@outlook.com">freesysck@outlook.com</a></p> <p> <!-- TODO: Replace with your repo/site --> <a href="https://github.com/chenkaitech/SignDepot" target="_blank" rel="noopener" data-en="GitHub Repository" data-zh="GitHub 仓库"></a><br> <a href="https://github.com/chenkaitech/SignDepot/issues" target="_blank" rel="noopener" data-en="Report an issue on GitHub" data-zh="在 GitHub 提交问题"></a> </p> </div> </div> </section> <footer class="footer"> <div class="grid-2"> <div> <strong data-en="SignDepot" data-zh="SignDepot · 文档扫描与签名"></strong><br> <span data-en="© 2026. All rights reserved." data-zh="© 2026。保留所有权利。"></span> </div> <div style="text-align:right"> <span class="small" data-en="Scan → Organize → Sign → Export" data-zh="扫描 → 归档 → 签署 → 导出"></span> </div> </div> </footer> </div> <script> function swapLangImages(lang){ document.querySelectorAll("img[data-en-src]").forEach(img=>{ const src = img.getAttribute(lang==="zh" ? "data-zh-src" : "data-en-src"); if(src) img.setAttribute("src", src); }); } function setLang(lang){ document.querySelectorAll("[data-en]").forEach(el=>{ const text = el.getAttribute(lang === "zh" ? "data-zh" : "data-en"); if(text!==null){ el.textContent = text; } }); // Keep placeholders for anchor labels already handled by data-en/data-zh swapLangImages(lang); document.getElementById("btn-en").classList.toggle("active", lang==="en"); document.getElementById("btn-zh").classList.toggle("active", lang==="zh"); localStorage.setItem("signdepot-lang", lang); } document.getElementById("btn-en").onclick=()=>setLang("en"); document.getElementById("btn-zh").onclick=()=>setLang("zh"); const saved = localStorage.getItem("signdepot-lang") || (navigator.language && navigator.language.startsWith("zh") ? "zh" : "en"); setLang(saved); </script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SignDepot · 文档扫描与签名</title>
+<meta name="description" content="SignDepot · Scan, organize & sign PDFs and photos. 扫描归档，一键签署 PDF/图片。">
+<link rel="icon" href="favicon.ico">
+<style>
+:root{
+  --bg:#16171E; --surface:#1E1F27; --text:#E8EAF4; --text2:#B4B8C9; --blue:#7DA6FF;
+  --joy:#FFD54F; --calm:#4DA8FF; --anx:#FF7043; --sad:#7E57C2; --ener:#2ECC71;
+}
+*{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);
+font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, Noto Sans, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;}
+a{color:var(--blue);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:40px 24px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700}
+.brand img.icon{width:40px;height:40px;border-radius:12px}
+.lang-switch{display:flex;gap:8px;background:var(--surface);border-radius:12px;padding:6px}
+.lang-switch button{all:unset;cursor:pointer;padding:6px 14px;border-radius:10px;color:var(--text2);font-weight:600}
+.lang-switch button.active{background:var(--blue);color:#0B1220}
+.hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:36px;align-items:center;margin-top:40px}
+.hero h1{font-size:40px;line-height:1.1;margin:0 0 16px}
+.hero p.lead{color:var(--text2);font-size:18px;margin:0 0 24px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.button{display:inline-flex;align-items:center;gap:10px;background:var(--blue);color:#0B1220;font-weight:700;
+  padding:14px 22px;border-radius:14px;box-shadow:0 10px 30px rgba(125,166,255,.25);}
+.button.ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.15)}
+.card{background:var(--surface);border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.25);}
+.section{margin-top:80px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.tag{display:inline-block;padding:6px 10px;border-radius:8px;font-size:13px}
+.sample{width:100%;border-radius:18px;box-shadow:0 12px 40px rgba(0,0,0,.35);background:#0f1118;aspect-ratio:9/19.5;object-fit:cover}
+.footer{margin-top:80px;color:var(--text2);font-size:14px;border-top:1px solid rgba(255,255,255,.08);padding:32px 0}
+.colorbar{height:10px;border-radius:999px;background:linear-gradient(90deg,var(--calm),var(--ener),var(--joy),var(--anx),var(--sad));}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.gallery img{width:100%;border-radius:18px;box-shadow:0 12px 40px rgba(0,0,0,.35);background:#0f1118;aspect-ratio:9/19.5;object-fit:cover}
+@media (max-width:960px){ .hero{grid-template-columns:1fr} }
+
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{color:var(--text2);font-weight:600}
+.nav-links a:hover{color:var(--text)}
+.small{color:var(--text2);font-size:14px;line-height:1.7}
+ul.bullets{margin:12px 0 0 18px; color: var(--text2); line-height:1.7}
+</style>
+</head>
+<body>
+<div class="container">
+  <nav>
+    <div class="brand">
+      <img class="icon" src="app_icon.png" alt="SignDepot icon">
+      <span data-en="SignDepot" data-zh="SignDepot · 文档扫描与签名"></span>
+    </div>
+
+    <div class="nav-links">
+      <a href="#features" data-en="Features" data-zh="功能"></a>
+      <a href="#privacy" data-en="Privacy" data-zh="隐私"></a>
+      <a href="#support" data-en="Support" data-zh="支持"></a>
+    </div>
+
+    <div class="lang-switch">
+      <button id="btn-en" class="active">English</button>
+      <button id="btn-zh">中文</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1 data-en="Scan, organize & sign PDFs and photos"
+          data-zh="扫描归档，一键签署 PDF/图片"></h1>
+
+      <p class="lead"
+         data-en="Turn paper into clean PDFs, import from Files/iCloud, manage everything in folders, and place a reusable signature anywhere in seconds."
+         data-zh="把纸质文件快速扫描成清晰 PDF，从文件/iCloud 导入 PDF 与图片，文件夹分类管理，并在任意位置拖放缩放可复用签名。"></p>
+
+      <div class="cta">
+        <!-- TODO: Replace with your App Store / landing page URL -->
+        <a href="https://example.com" class="button" target="_blank" rel="noopener"
+           data-en="Launch" data-zh="打开应用/商店"></a>
+        <a href="#features" class="button ghost" data-en="Learn more" data-zh="了解功能"></a>
+      </div>
+
+      <div style="margin-top:24px;color:var(--text2)">
+        <span>• </span><span data-en="No account required" data-zh="无需注册账号"></span><br>
+        <span>• </span><span data-en="Signatures are reusable" data-zh="签名一次创建，反复使用"></span><br>
+        <span>• </span><span data-en="Scan → organize → sign → export" data-zh="扫描 → 归档 → 签署 → 导出"></span>
+      </div>
+
+      <div style="margin-top:16px" class="colorbar" aria-hidden="true"></div>
+    </div>
+
+    <!-- Optional: you can place a hero screenshot here -->
+    <div>
+      <img class="sample" src="hero_en.png" data-en-src="hero_en.png" data-zh-src="hero_zh.png" alt="SignDepot hero screenshot">
+      <div class="small" style="margin-top:10px"
+           data-en="Replace hero_en.png / hero_zh.png with your real screenshot."
+           data-zh="将 hero_en.png / hero_zh.png 替换为真实截图。"></div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <h2 data-en="Core features" data-zh="核心功能"></h2>
+    <div class="grid-3" style="margin-top:24px">
+
+      <div class="card">
+        <div class="tag" style="background:rgba(77,168,255,.18);color:var(--calm)"
+             data-en="Scanning" data-zh="文档扫描"></div>
+        <h3 style="margin:12px 0" data-en="Built-in camera scanner" data-zh="内置相机扫描仪"></h3>
+        <p class="small"
+           data-en="Scan paper documents into high-quality digital files with a clean, readable result."
+           data-zh="通过内置扫描仪把纸质文件转换为清晰可读的高质量数字文档。"></p>
+      </div>
+
+      <div class="card">
+        <div class="tag" style="background:rgba(46,204,113,.18);color:var(--ener)"
+             data-en="Import" data-zh="导入"></div>
+        <h3 style="margin:12px 0" data-en="Import PDFs & images from iCloud" data-zh="从 iCloud 导入 PDF/图片"></h3>
+        <p class="small"
+           data-en="Bring in existing PDFs and photos from Files/iCloud, then sign or organize them anytime."
+           data-zh="支持从“文件/iCloud”导入现有 PDF 与图片，随时整理并完成签署。"></p>
+      </div>
+
+      <div class="card">
+        <div class="tag" style="background:rgba(255,213,79,.18);color:var(--joy)"
+             data-en="Manage" data-zh="管理"></div>
+        <h3 style="margin:12px 0" data-en="Folders + recent + search" data-zh="文件夹 + 最近 + 搜索"></h3>
+        <p class="small"
+           data-en="See recent documents, search by file name, and organize everything into folders. Rename, preview, delete with ease."
+           data-zh="首页最近文档 + 按文件名全局搜索；支持文件夹分类、移动归类，以及重命名/预览/删除等操作。"></p>
+      </div>
+
+      <div class="card">
+        <div class="tag" style="background:rgba(126,87,194,.18);color:var(--sad)"
+             data-en="eSignature" data-zh="电子签名"></div>
+        <h3 style="margin:12px 0" data-en="Create once, reuse forever" data-zh="签名创建与复用"></h3>
+        <p class="small"
+           data-en="Create a handwritten signature and save it to your signature library for reuse."
+           data-zh="创建手写签名并保存到签名库，一次创建，多次复用。"></p>
+      </div>
+
+      <div class="card">
+        <div class="tag" style="background:rgba(255,112,67,.18);color:var(--anx)"
+             data-en="Sign" data-zh="签署"></div>
+        <h3 style="margin:12px 0" data-en="Place & resize anywhere" data-zh="任意位置拖放缩放"></h3>
+        <p class="small"
+           data-en="Add signatures to any position on PDFs or photos, move and resize freely, then export a final signed copy."
+           data-zh="在 PDF/图片任意位置添加签名，支持拖动与缩放，导出最终签署副本。"></p>
+      </div>
+
+      <div class="card">
+        <div class="tag" style="background:rgba(125,166,255,.18);color:var(--blue)"
+             data-en="Languages" data-zh="多语言"></div>
+        <h3 style="margin:12px 0" data-en="Built-in localization" data-zh="内置本地化"></h3>
+        <p class="small"
+           data-en="English, Simplified Chinese, German, French, and Spanish supported."
+           data-zh="支持英语、简体中文、德语、法语、西班牙语。"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-en="Screenshots" data-zh="界面预览"></h2>
+    <p class="lead"
+       data-en="Replace the images below with your actual screenshots (English/Chinese)."
+       data-zh="将下方占位图替换为你的真实截图（中英各一套）。"></p>
+    <div class="gallery" style="margin-top:16px">
+      <img src="en_1.png" data-en-src="en_1.png" data-zh-src="zh_1.png" alt="screenshot 1">
+      <img src="en_2.png" data-en-src="en_2.png" data-zh-src="zh_2.png" alt="screenshot 2">
+      <img src="en_3.png" data-en-src="en_3.png" data-zh-src="zh_3.png" alt="screenshot 3">
+      <img src="en_4.png" data-en-src="en_4.png" data-zh-src="zh_4.png" alt="screenshot 4">
+    </div>
+
+    <div class="small" style="margin-top:18px">
+      <div data-en="Suggested screenshot captions:" data-zh="建议截图文案："></div>
+      <ul class="bullets">
+        <li data-en="Scan paper to PDF" data-zh="拍照扫描成 PDF"></li>
+        <li data-en="Import from iCloud Files" data-zh="从 iCloud 导入文件"></li>
+        <li data-en="Folders keep it tidy" data-zh="文件夹分类归档"></li>
+        <li data-en="Search by file name" data-zh="按文件名快速搜索"></li>
+        <li data-en="Create a reusable signature" data-zh="创建可复用签名"></li>
+        <li data-en="Place & resize anywhere" data-zh="任意位置拖放缩放"></li>
+        <li data-en="Export a signed copy" data-zh="导出签署最终副本"></li>
+        <li data-en="5 languages supported" data-zh="支持 5 种语言"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid-2">
+      <div class="card">
+        <h2 id="privacy" data-en="Privacy" data-zh="隐私"></h2>
+        <p class="small"
+           data-en="No account required. Documents and signatures are processed on device by default."
+           data-zh="无需注册账号。文档与签名默认在设备端处理。"></p>
+        <ul class="bullets">
+          <li data-en="We do not sell your data." data-zh="我们不出售用户数据。"></li>
+          <li data-en="You stay in control of what you import and export." data-zh="你可以完全掌控导入与导出内容。"></li>
+        </ul>
+        <p class="small" style="margin-top:12px"
+           data-en="Note: Update this section to match your actual App Privacy details in App Store Connect."
+           data-zh="提示：请按实际情况与 App Store Connect 的隐私问卷保持一致。"></p>
+      </div>
+
+      <div class="card">
+        <h2 id="support" data-en="Support" data-zh="支持"></h2>
+        <p class="small"
+           data-en="Questions or feedback? Email us or open an issue on GitHub."
+           data-zh="有问题或建议？欢迎发送邮件，或在 GitHub 提交 Issue。"></p>
+
+        <!-- TODO: Replace with your support email -->
+        <p><a href="mailto:freesysck@outlook.com">freesysck@outlook.com</a></p>
+
+        <p>
+          <!-- TODO: Replace with your repo/site -->
+          <a href="https://github.com/chenkaitech/SignDepot" target="_blank" rel="noopener"
+             data-en="GitHub Repository" data-zh="GitHub 仓库"></a><br>
+          <a href="https://github.com/chenkaitech/SignDepot/issues" target="_blank" rel="noopener"
+             data-en="Report an issue on GitHub" data-zh="在 GitHub 提交问题"></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="grid-2">
+      <div>
+        <strong data-en="SignDepot" data-zh="SignDepot · 文档扫描与签名"></strong><br>
+        <span data-en="© 2026. All rights reserved."
+              data-zh="© 2026。保留所有权利。"></span>
+      </div>
+      <div style="text-align:right">
+        <span class="small" data-en="Scan → Organize → Sign → Export"
+              data-zh="扫描 → 归档 → 签署 → 导出"></span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+function swapLangImages(lang){
+  document.querySelectorAll("img[data-en-src]").forEach(img=>{
+    const src = img.getAttribute(lang==="zh" ? "data-zh-src" : "data-en-src");
+    if(src) img.setAttribute("src", src);
+  });
+}
+
+function setLang(lang){
+  document.querySelectorAll("[data-en]").forEach(el=>{
+    const text = el.getAttribute(lang === "zh" ? "data-zh" : "data-en");
+    if(text!==null){ el.textContent = text; }
+  });
+
+  // Keep placeholders for anchor labels already handled by data-en/data-zh
+  swapLangImages(lang);
+
+  document.getElementById("btn-en").classList.toggle("active", lang==="en");
+  document.getElementById("btn-zh").classList.toggle("active", lang==="zh");
+  localStorage.setItem("signdepot-lang", lang);
+}
+
+document.getElementById("btn-en").onclick=()=>setLang("en");
+document.getElementById("btn-zh").onclick=()=>setLang("zh");
+const saved = localStorage.getItem("signdepot-lang") || (navigator.language && navigator.language.startsWith("zh") ? "zh" : "en");
+setLang(saved);
+</script>
+</body>
+</html>
