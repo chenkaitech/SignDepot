@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SignDepot · 文档扫描与签名</title>
-<meta name="description" content="SignDepot · Scan, organize & sign PDFs and photos. 扫描归档，一键签署 PDF/图片。">
-<link rel="icon" href="favicon.ico">
+<title>DoneLog · 完成日志与时间记录</title>
+<meta name="description" content="DoneLog helps you track completed tasks, review time spent, and export CSV/PDF reports. DoneLog 帮你记录完成事项，回顾时间投入，并支持 CSV/PDF 导出。">
+<link rel="icon" href="donelog_icon.png">
 <style>
 :root{
   --bg:#16171E; --surface:#1E1F27; --text:#E8EAF4; --text2:#B4B8C9; --blue:#7DA6FF;
@@ -39,7 +39,6 @@ nav{display:flex;justify-content:space-between;align-items:center;gap:16px}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
 .gallery img{width:100%;border-radius:18px;box-shadow:0 12px 40px rgba(0,0,0,.35);background:#0f1118;aspect-ratio:9/19.5;object-fit:cover}
 @media (max-width:960px){ .hero{grid-template-columns:1fr} }
-
 .nav-links{display:flex;gap:18px;align-items:center}
 .nav-links a{color:var(--text2);font-weight:600}
 .nav-links a:hover{color:var(--text)}
@@ -51,8 +50,8 @@ ul.bullets{margin:12px 0 0 18px; color: var(--text2); line-height:1.7}
 <div class="container">
   <nav>
     <div class="brand">
-      <img class="icon" src="app_icon.png" alt="SignDepot icon">
-      <span data-en="SignDepot" data-zh="SignDepot · 文档扫描与签名"></span>
+      <img class="icon" src="donelog_icon.png" alt="DoneLog icon">
+      <span data-en="DoneLog" data-zh="DoneLog · 完成日志与时间记录"></span>
     </div>
 
     <div class="nav-links">
@@ -69,32 +68,30 @@ ul.bullets{margin:12px 0 0 18px; color: var(--text2); line-height:1.7}
 
   <section class="hero">
     <div>
-      <h1 data-en="Scan, organize & sign PDFs and photos"
-          data-zh="扫描归档，一键签署 PDF/图片"></h1>
+      <h1 data-en="Record what you actually did"
+          data-zh="记录你真正做过的事"></h1>
 
       <p class="lead"
-         data-en="Turn paper into clean PDFs, import from Files/iCloud, manage everything in folders, and place a reusable signature anywhere in seconds."
-         data-zh="把纸质文件快速扫描成清晰 PDF，从文件/iCloud 导入 PDF 与图片，文件夹分类管理，并在任意位置拖放缩放可复用签名。"></p>
+         data-en="DoneLog helps you track completed tasks, visualize your time, and export CSV/PDF reports."
+         data-zh="DoneLog 帮你记录完成事项、追踪时间投入，并通过时间轴与统计图表回顾每日活动，支持 CSV / PDF 导出。"></p>
 
       <div class="cta">
-        <!-- TODO: Replace with your App Store / landing page URL -->
         <a href="https://example.com" class="button" target="_blank" rel="noopener"
            data-en="Launch" data-zh="打开应用/商店"></a>
         <a href="#features" class="button ghost" data-en="Learn more" data-zh="了解功能"></a>
       </div>
 
       <div style="margin-top:24px;color:var(--text2)">
-        <span>• </span><span data-en="No account required" data-zh="无需注册账号"></span><br>
-        <span>• </span><span data-en="Signatures are reusable" data-zh="签名一次创建，反复使用"></span><br>
-        <span>• </span><span data-en="Scan → organize → sign → export" data-zh="扫描 → 归档 → 签署 → 导出"></span>
+        <span>• </span><span data-en="Activity logging" data-zh="活动记录"></span><br>
+        <span>• </span><span data-en="Timeline & Insights" data-zh="时间轴与洞察"></span><br>
+        <span>• </span><span data-en="Categories, Reminders, Export" data-zh="分类管理 · 提醒 · 导出"></span>
       </div>
 
       <div style="margin-top:16px" class="colorbar" aria-hidden="true"></div>
     </div>
 
-    <!-- Optional: you can place a hero screenshot here -->
     <div>
-      <img class="sample" src="hero_en.png" data-en-src="hero_en.png" data-zh-src="hero_zh.png" alt="SignDepot hero screenshot">
+      <img class="sample" src="hero_en.png" data-en-src="hero_en.png" data-zh-src="hero_zh.png" alt="DoneLog hero screenshot">
       <div class="small" style="margin-top:10px"
            data-en="Replace hero_en.png / hero_zh.png with your real screenshot."
            data-zh="将 hero_en.png / hero_zh.png 替换为真实截图。"></div>
@@ -107,56 +104,56 @@ ul.bullets{margin:12px 0 0 18px; color: var(--text2); line-height:1.7}
 
       <div class="card">
         <div class="tag" style="background:rgba(77,168,255,.18);color:var(--calm)"
-             data-en="Scanning" data-zh="文档扫描"></div>
-        <h3 style="margin:12px 0" data-en="Built-in camera scanner" data-zh="内置相机扫描仪"></h3>
+             data-en="Activity Logging" data-zh="活动记录"></div>
+        <h3 style="margin:12px 0" data-en="Log completed tasks" data-zh="记录完成任务"></h3>
         <p class="small"
-           data-en="Scan paper documents into high-quality digital files with a clean, readable result."
-           data-zh="通过内置扫描仪把纸质文件转换为清晰可读的高质量数字文档。"></p>
+           data-en="Record completed tasks with title, notes, start/end time, and milestones."
+           data-zh="记录完成任务，包括标题、备注、开始/结束时间，以及里程碑标记。"></p>
       </div>
 
       <div class="card">
         <div class="tag" style="background:rgba(46,204,113,.18);color:var(--ener)"
-             data-en="Import" data-zh="导入"></div>
-        <h3 style="margin:12px 0" data-en="Import PDFs & images from iCloud" data-zh="从 iCloud 导入 PDF/图片"></h3>
+             data-en="Timeline" data-zh="时间轴"></div>
+        <h3 style="margin:12px 0" data-en="Timeline View" data-zh="时间轴视图"></h3>
         <p class="small"
-           data-en="Bring in existing PDFs and photos from Files/iCloud, then sign or organize them anytime."
-           data-zh="支持从“文件/iCloud”导入现有 PDF 与图片，随时整理并完成签署。"></p>
+           data-en="Review your day in chronological order to visualize time blocks."
+           data-zh="按时间顺序回顾每天活动轨迹，清晰了解时间分配。"></p>
       </div>
 
       <div class="card">
         <div class="tag" style="background:rgba(255,213,79,.18);color:var(--joy)"
-             data-en="Manage" data-zh="管理"></div>
-        <h3 style="margin:12px 0" data-en="Folders + recent + search" data-zh="文件夹 + 最近 + 搜索"></h3>
+             data-en="Insights" data-zh="洞察分析"></div>
+        <h3 style="margin:12px 0" data-en="Visual insights & analytics" data-zh="洞察分析"></h3>
         <p class="small"
-           data-en="See recent documents, search by file name, and organize everything into folders. Rename, preview, delete with ease."
-           data-zh="首页最近文档 + 按文件名全局搜索；支持文件夹分类、移动归类，以及重命名/预览/删除等操作。"></p>
+           data-en="See time distribution, activity frequency, and category statistics visually."
+           data-zh="通过图表查看时间分布、活动频率和分类占比。"></p>
       </div>
 
       <div class="card">
         <div class="tag" style="background:rgba(126,87,194,.18);color:var(--sad)"
-             data-en="eSignature" data-zh="电子签名"></div>
-        <h3 style="margin:12px 0" data-en="Create once, reuse forever" data-zh="签名创建与复用"></h3>
+             data-en="Categories" data-zh="分类管理"></div>
+        <h3 style="margin:12px 0" data-en="Custom categories" data-zh="自定义分类"></h3>
         <p class="small"
-           data-en="Create a handwritten signature and save it to your signature library for reuse."
-           data-zh="创建手写签名并保存到签名库，一次创建，多次复用。"></p>
+           data-en="Create personalized categories with names, icons, and colors."
+           data-zh="创建个性化分类，包括名称、图标与主题颜色。"></p>
       </div>
 
       <div class="card">
         <div class="tag" style="background:rgba(255,112,67,.18);color:var(--anx)"
-             data-en="Sign" data-zh="签署"></div>
-        <h3 style="margin:12px 0" data-en="Place & resize anywhere" data-zh="任意位置拖放缩放"></h3>
+             data-en="Reminders" data-zh="提醒"></div>
+        <h3 style="margin:12px 0" data-en="Timely notifications" data-zh="本地提醒"></h3>
         <p class="small"
-           data-en="Add signatures to any position on PDFs or photos, move and resize freely, then export a final signed copy."
-           data-zh="在 PDF/图片任意位置添加签名，支持拖动与缩放，导出最终签署副本。"></p>
+           data-en="Set reminders at custom intervals to log tasks promptly."
+           data-zh="自定义提醒频率，例如每 30 分钟、1 小时或 2 小时提醒一次。"></p>
       </div>
 
       <div class="card">
         <div class="tag" style="background:rgba(125,166,255,.18);color:var(--blue)"
-             data-en="Languages" data-zh="多语言"></div>
-        <h3 style="margin:12px 0" data-en="Built-in localization" data-zh="内置本地化"></h3>
+             data-en="Export" data-zh="导出"></div>
+        <h3 style="margin:12px 0" data-en="CSV & PDF reports" data-zh="CSV / PDF 导出"></h3>
         <p class="small"
-           data-en="English, Simplified Chinese, German, French, and Spanish supported."
-           data-zh="支持英语、简体中文、德语、法语、西班牙语。"></p>
+           data-en="Export your records as CSV files or generate PDF reports for review or sharing."
+           data-zh="支持导出 CSV 文件或生成 PDF 报告，用于复盘或分享。"></p>
       </div>
 
     </div>
@@ -164,28 +161,12 @@ ul.bullets{margin:12px 0 0 18px; color: var(--text2); line-height:1.7}
 
   <section class="section">
     <h2 data-en="Screenshots" data-zh="界面预览"></h2>
-    <p class="lead"
-       data-en="Replace the images below with your actual screenshots (English/Chinese)."
-       data-zh="将下方占位图替换为你的真实截图（中英各一套）。"></p>
+    <p class="lead" data-en="Replace with DoneLog screenshots" data-zh="将下方占位图替换为 DoneLog 真实截图。"></p>
     <div class="gallery" style="margin-top:16px">
-      <img src="en_1.png" data-en-src="en_1.png" data-zh-src="zh_1.png" alt="screenshot 1">
-      <img src="en_2.png" data-en-src="en_2.png" data-zh-src="zh_2.png" alt="screenshot 2">
-      <img src="en_3.png" data-en-src="en_3.png" data-zh-src="zh_3.png" alt="screenshot 3">
-      <img src="en_4.png" data-en-src="en_4.png" data-zh-src="zh_4.png" alt="screenshot 4">
-    </div>
-
-    <div class="small" style="margin-top:18px">
-      <div data-en="Suggested screenshot captions:" data-zh="建议截图文案："></div>
-      <ul class="bullets">
-        <li data-en="Scan paper to PDF" data-zh="拍照扫描成 PDF"></li>
-        <li data-en="Import from iCloud Files" data-zh="从 iCloud 导入文件"></li>
-        <li data-en="Folders keep it tidy" data-zh="文件夹分类归档"></li>
-        <li data-en="Search by file name" data-zh="按文件名快速搜索"></li>
-        <li data-en="Create a reusable signature" data-zh="创建可复用签名"></li>
-        <li data-en="Place & resize anywhere" data-zh="任意位置拖放缩放"></li>
-        <li data-en="Export a signed copy" data-zh="导出签署最终副本"></li>
-        <li data-en="5 languages supported" data-zh="支持 5 种语言"></li>
-      </ul>
+      <img src="ss_en_1.png" data-en-src="ss_en_1.png" data-zh-src="ss_zh_1.png" alt="screenshot 1">
+      <img src="ss_en_2.png" data-en-src="ss_en_2.png" data-zh-src="ss_zh_2.png" alt="screenshot 2">
+      <img src="ss_en_3.png" data-en-src="ss_en_3.png" data-zh-src="ss_zh_3.png" alt="screenshot 3">
+      <img src="ss_en_4.png" data-en-src="ss_en_4.png" data-zh-src="ss_zh_4.png" alt="screenshot 4">
     </div>
   </section>
 
@@ -193,34 +174,18 @@ ul.bullets{margin:12px 0 0 18px; color: var(--text2); line-height:1.7}
     <div class="grid-2">
       <div class="card">
         <h2 id="privacy" data-en="Privacy" data-zh="隐私"></h2>
-        <p class="small"
-           data-en="No account required. Documents and signatures are processed on device by default."
-           data-zh="无需注册账号。文档与签名默认在设备端处理。"></p>
+        <p class="small" data-en="No account required. All logs are stored locally by default."
+           data-zh="无需注册账号。所有记录默认保存在本地，由你完全掌控。"></p>
         <ul class="bullets">
           <li data-en="We do not sell your data." data-zh="我们不出售用户数据。"></li>
-          <li data-en="You stay in control of what you import and export." data-zh="你可以完全掌控导入与导出内容。"></li>
+          <li data-en="You control imports, exports, and reports." data-zh="你可以完全掌控导入、导出与报告。"></li>
         </ul>
-        <p class="small" style="margin-top:12px"
-           data-en="Note: Update this section to match your actual App Privacy details in App Store Connect."
-           data-zh="提示：请按实际情况与 App Store Connect 的隐私问卷保持一致。"></p>
       </div>
 
       <div class="card">
         <h2 id="support" data-en="Support" data-zh="支持"></h2>
-        <p class="small"
-           data-en="Questions or feedback? Email us or open an issue on GitHub."
-           data-zh="有问题或建议？欢迎发送邮件，或在 GitHub 提交 Issue。"></p>
-
-        <!-- TODO: Replace with your support email -->
+        <p class="small" data-en="Questions or feedback? Email us." data-zh="有问题或建议？欢迎发送邮件联系。"></p>
         <p><a href="mailto:freesysck@outlook.com">freesysck@outlook.com</a></p>
-
-        <p>
-          <!-- TODO: Replace with your repo/site -->
-          <a href="https://github.com/chenkaitech/SignDepot" target="_blank" rel="noopener"
-             data-en="GitHub Repository" data-zh="GitHub 仓库"></a><br>
-          <a href="https://github.com/chenkaitech/SignDepot/issues" target="_blank" rel="noopener"
-             data-en="Report an issue on GitHub" data-zh="在 GitHub 提交问题"></a>
-        </p>
       </div>
     </div>
   </section>
@@ -228,13 +193,8 @@ ul.bullets{margin:12px 0 0 18px; color: var(--text2); line-height:1.7}
   <footer class="footer">
     <div class="grid-2">
       <div>
-        <strong data-en="SignDepot" data-zh="SignDepot · 文档扫描与签名"></strong><br>
-        <span data-en="© 2026. All rights reserved."
-              data-zh="© 2026。保留所有权利。"></span>
-      </div>
-      <div style="text-align:right">
-        <span class="small" data-en="Scan → Organize → Sign → Export"
-              data-zh="扫描 → 归档 → 签署 → 导出"></span>
+        <strong data-en="DoneLog · Done List & Time Log" data-zh="DoneLog · 完成日志与时间记录"></strong><br>
+        <span data-en="© 2026 DoneLog. All rights reserved." data-zh="© 2026 DoneLog。保留所有权利。"></span>
       </div>
     </div>
   </footer>
@@ -254,17 +214,16 @@ function setLang(lang){
     if(text!==null){ el.textContent = text; }
   });
 
-  // Keep placeholders for anchor labels already handled by data-en/data-zh
   swapLangImages(lang);
 
   document.getElementById("btn-en").classList.toggle("active", lang==="en");
   document.getElementById("btn-zh").classList.toggle("active", lang==="zh");
-  localStorage.setItem("signdepot-lang", lang);
+  localStorage.setItem("donelog-lang", lang);
 }
 
 document.getElementById("btn-en").onclick=()=>setLang("en");
 document.getElementById("btn-zh").onclick=()=>setLang("zh");
-const saved = localStorage.getItem("signdepot-lang") || (navigator.language && navigator.language.startsWith("zh") ? "zh" : "en");
+const saved = localStorage.getItem("donelog-lang") || (navigator.language && navigator.language.startsWith("zh") ? "zh" : "en");
 setLang(saved);
 </script>
 </body>
